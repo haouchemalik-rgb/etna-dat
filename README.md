@@ -4,9 +4,9 @@
 
 Conception de l'architecture réseau et sécurité d'une **PME aéronautique, sous-traitante d'Airbus**, répartie sur deux sites de 50 utilisateurs, avec un serveur web exposé et des exigences de conformité renforcées (collaboration possible avec des entités militaires).
 
-📄 **[Lire le DAT complet (PDF, 25 pages)](DAT.pdf)**
+📄 **[Lire le DAT complet (PDF, 26 pages)](DAT.pdf)**
 
-**Compétences mises en œuvre :** analyse de risques · segmentation VLAN / 802.1Q · 802.1X & FreeRADIUS · VPN IPsec (strongSwan) · filtrage inter-VLAN (iptables) · DMZ & reverse proxy Nginx · portail captif pfSense · supervision Zabbix · PRA & sauvegardes · référentiels ANSSI, ISO 27001, RGPD, HDS, AirCyber
+**Compétences mises en œuvre :** analyse de risques · segmentation VLAN / 802.1Q · 802.1X & FreeRADIUS · VPN IPsec site-à-site avec authentification par certificats · pare-feu NGFW Fortinet (FortiOS) · DMZ & reverse proxy Nginx · portail captif pfSense · supervision Zabbix · PRA & sauvegardes · référentiels ANSSI, ISO 27001, RGPD, HDS, AirCyber
 
 ---
 
@@ -39,8 +39,8 @@ Switchs : trunks 802.1Q, port security, authentification 802.1X via RADIUS, QoS 
 
 | Sujet | Schéma |
 |---|---|
-| VPN IPsec site-à-site (strongSwan) | [IPsec_site-a-site.png](schemas/IPsec_site-a-site.png) |
-| Règles de pare-feu inter-VLAN (iptables) | [ACL_inter-VLAN.png](schemas/ACL_inter-VLAN.png) |
+| VPN IPsec site-à-site (FortiOS, authentification par certificats) | [IPsec_site-a-site.png](schemas/IPsec_site-a-site.png) |
+| Règles de pare-feu inter-VLAN (FortiOS) | [ACL_inter-VLAN.png](schemas/ACL_inter-VLAN.png) |
 | Authentification 802.1X (FreeRADIUS) | [Authentification_802.1X.png](schemas/Authentification_802.1X.png) |
 | Portail captif Wi-Fi invité (pfSense) | [Wi-Fi_invite.png](schemas/Wi-Fi_invite.png) |
 | Reverse proxy HTTPS (Nginx) | [Reverse_proxy_HTTPS.png](schemas/Reverse_proxy_HTTPS.png) |
